@@ -86,7 +86,7 @@
                 <li><a href="https://github.com/ayushrsbp" target="_blank">GitHub</a></li>
             </ul>
         </section>
-        <section id="download" class="section download-section">
+        <section id="download" class="section">
             <h2>Documents</h2>
             <ul>
                 <li><a href="Resume.pdf" download>Resume</a></li>
@@ -96,6 +96,9 @@
             </ul>
         </section>
     </div>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+    
     <footer>
         <p>&copy; 2024 Ayush Raj</p>
     </footer>
@@ -104,6 +107,24 @@
             var navMenu = document.getElementById('nav-menu');
             navMenu.classList.toggle('show-nav');
         }
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show the back-to-top button when scrolled down
+        window.onscroll = function() {
+            var backToTopButton = document.querySelector('.back-to-top');
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            if (scrollTop > 20) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        };
     </script>
 </body>
 </html>
