@@ -43,7 +43,7 @@ nav a:hover {
 .bar {
     height: 3px;
     width: 25px;
-    background-color: white;
+    background-color: #3949ab;
     margin: 4px 0;
     transition: 0.4s;
 }
@@ -116,43 +116,7 @@ ul li a:hover {
     text-decoration: underline;
     color: #fff;
 }
-.download-section {
-    background: #f9fbe7;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
 
-.download-section:hover {
-    transform: translateY(-5px);
-}
-
-.download-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 1rem;
-}
-
-.download-link {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 1rem;
-    margin: 0.5rem;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.download-link:hover {
-    background-color: #e0e0e0;
-}
-
-.download-link a {
-    text-decoration: none;
-    color: #333;
-}
 footer {
     background-color: #283593;
     color: white;
