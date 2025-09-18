@@ -1,142 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <link rel="stylesheet" type="text/css" href="Myportfolion.css"> -->
-    <link rel="stylesheet" type="text/css" href="Myportfolio2.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Raj's Personal Webpage</title>
+    <title>Ayush Raj | Full Stack Developer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
     
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Ayush Raj</h1>
-        <p>Full Stack Java Developer | IIT Kharagpur</p>
-    </header>
-    <div class="hamburger" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+
+    <div id="preloader">
+        <div class="spinner"></div>
     </div>
-    <nav id = "nav-menu">
+
+    <header>
+        <div class="header-container">
+            <h1>Ayush Raj</h1>
+            <p>IIT Kharagpur</p>
+            <p><span id="typed-text"></span></p>
+        </div>
+    </header>
+
+    <div class="hamburger" id="hamburger-icon" aria-label="Menu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
+    <nav id="nav-menu">
         <a href="#about">About</a>
-        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
-        <a href="#social-media">Social Media</a>
-        <a href="#social-media">Documents</a>
     </nav>
-    <div class="container">
-        <div class="profile-pic">
-            <img src="profile.jpg" alt="Profile Picture of Ayush Raj">
-        </div>
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hello! My name is Ayush Raj. I am from Bihar. I am a 4th-year undergraduate student pursuing a dual degree in Mining Engineering at IIT Kharagpur. I love coding, I love to solve problems, and I really want to work as a software engineer. I want to take on challenging tasks and experience the thrill that comes from using code to solve elegant problems. My motivation to keep learning and getting better at programming has led me to explore with several languages and technologies. In order to enhance technical developments, I'm dedicated to developing my abilities, seizing new possibilities, and working with like-minded individuals as I work toward my goal of becoming a software engineer.</p>
-        </section>
-        <section id="education" class="section">
-            <h2>Education</h2>
-            <h3>IIT Kharagpur</h3>
-            <p>4th Year Undergraduate Student in Mining Engineering (Dual Degree)</p>
-            <h3>D. C. College, Simri Bakhtiyarpur, Saharsa</h3>
-            <p>Intermediate - 88.2% (Under top 10 in District, Under top 10% in Bihar)</p>
-            <h3>+2 High School, Simri Bakhtiyarpur, Saharsa</h3>
-            <p>Matriculation - 80.4% (Under top 10 in District)</p>
-        </section>
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>Data Structures and Algorithms</li>
-                <li>C Programming Language</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </section>
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <h3>Search and Download Images</h3>
-            <p>A dynamic web application that allows users to search, view, and download high-quality images. It leverages the Pexels API to fetch a vast collection of images and provides an intuitive interface for users to interact with these images seamlessly.</p>
-            <li><a href="https://ayushrsbp.github.io/Image-World/" target="_blank">Image World</a></li>
-            
-            <h3>Snake Game Website</h3>
-            <p>A modern, interactive web-based Snake game developed using HTML, CSS, and JavaScript. The game features dynamic gameplay with sound effects and a scoring system, providing an engaging user experience. It demonstrates proficiency in front-end development, DOM manipulation, and basic game mechanics.</p>
-            <li><a href="https://ayushrsbp.github.io/Snake-Game/" target="_blank">Snake Game</a></li>
 
-            <h3>Book World</h3>
-            <p>I created a dummy website of online book shop during my first year of college. This project involved using HTML, and CSS to build a functional and user-friendly website.</p>
-            <li><a href="https://ayushrsbp.github.io/myfirstwebsite/" target="_blank">Book World</a></li>
+    <main class="container">
+        <section id="about" class="section">
+            <div class="profile-pic">
+                <img src="profile.jpg" alt="Profile Picture of Ayush Raj">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I am a final-year dual degree student in Mining Engineering at IIT Kharagpur with a strong passion for software development. My goal is to leverage my problem-solving skills to tackle challenging tasks and build elegant, efficient software solutions. I am dedicated to continuous learning, exploring new technologies, and collaborating with like-minded individuals to drive technical innovation.</p>
+            </div>
         </section>
+
+        <section id="skills" class="section">
+            <h2>Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Java (Proficient), Python, C, JavaScript (Basic), HTML, CSS, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Tools</h3>
+                    <p>Spring, Spring Boot, Hibernate, Microservices, System Design, DBMS, MySQL, Git, GitHub, REST APIs</p>
+                </div>
+                 <div class="skill-category">
+                    <h3>Coursework</h3>
+                    <p>Object Oriented Programming, Data Structures, Probability and Statistics, Database Systems, Computer Architecture</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Internship Experience</h2>
+            <div class="project-card">
+                <h3>Software Developer Intern | AuxVent</h3>
+                <small>May 2025 - Jul 2025</small>
+                <p>Developed a full-stack application to optimize auxiliary ventilation systems. Migrated a complex Fortran program to a user-friendly Java application, automated data generation, and deployed the final product on AWS Elastic Beanstalk.</p>
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Spring Boot</span>
+                    <span>AWS</span>
+                    <span>Microservices</span>
+                </div>
+                 <a href="http://auxventapp.eu-north-1.elasticbeanstalk.com/" target="_blank" class="project-link">View Project</a>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Personal Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>AI-Powered Quiz Application</h3>
+                    <p>A full-stack quiz platform using Groq's Llama 3 for dynamic quiz generation. Features a secure backend with Spring Boot and Spring Security for authentication and team management.</p>
+                    <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>AI/ML</span></div>
+                </div>
+                <div class="project-card">
+                    <h3>DiamondWash App | Coal Washability Analysis</h3>
+                    <p>Developed a Java application to analyze coal washability curves from Excel data, employing Apache POI and implementing a cubic spline interpolation algorithm for precise calculations.</p>
+                    <div class="project-tags"><span>Java</span><span>Apache POI</span><span>Algorithms</span></div>
+                </div>
+                <div class="project-card">
+                    <h3>AI Assistant | MineVent</h3>
+                    <p>A history-aware chatbot using Groq's Llama 3 and RAG for conversational support on mine ventilation, with Pinecone Vector Storage for optimized response retrieval.</p>
+                     <div class="project-tags"><span>Python</span><span>AI/ML</span><span>Pinecone</span><span>RAG</span></div>
+                </div>
+                <div class="project-card">
+                    <h3>Smart Contact Manager</h3>
+                    <p>A secure web application with CRUD functionalities, user authentication (including Google OAuth), and email integration using Spring Data JPA and JavaMailSender.</p>
+                    <div class="project-tags"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>OAuth</span></div>
+                </div>
+            </div>
+        </section>
+
         <section id="achievements" class="section">
             <h2>Achievements</h2>
             <ul>
-                <li>Felicitated with the prestigious National Talent Search Examination (NTSE) Scholarship by NCERT, Government of India</li>
-                <li>Cracked Pre Regional Mathematics Olympiad 2020 conducted by Homi Bhabha Centre for Science Education</li>
-                <li>Selected for Inpire Scholarship in 2020 by the Dpartment of Science and Technology, Government of India</li>
-                <li>Participant of State Level Quiz Competition "TARANG" organized by Bihar Government in 8th Standard.</li>
-                <li>Participant of National Level Quiz Competition "Bharat Ko Jano" organized by Bharat Vikas Parishad in 9th standard.</li>
-                <li>Runner-up of State Level Quiz "Election Knowledge" organized by Election Commission of India in 10th standard.</li>
-                <li>Successfully completed the tenure as Coordinator, Students' Welfare of RadhaKrishnan Hall of Residence, IIT Kharagpur for the academic session 2023-24.</li>
+                <li>Secured AIR 371 in GATE 2025, placing in the top 5% of candidates.</li>
+                <li>Solved over 1000 DSA problems on platforms like LeetCode, GFG, and Codeforces.</li>
+                <li>Felicitated with the prestigious National Talent Search Examination (NTSE) Scholarship by NCERT, Government of India.</li>
+                <li>Achieved a peak contest rating of 1691 on LeetCode.</li>
+                <li>Ranked among the top 1920 students nationally in the Pre-Regional Mathematics Olympiad.</li>
+                <li>Selected for Inspire Scholarship in 2020 by the Department of Science and Technology, Government of India.</li>
+                <li>Successfully completed the tenure as Coordinator, Students' Welfare of Radhakrishnan Hall of Residence, IIT Kharagpur.</li>
+                <li>Runner-up of State Level Quiz "Election Knowledge" organized by the Election Commission of India.</li>
             </ul>
         </section>
+
         <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p>Email: rayushkgp@gmail.com</p>
-            <p>Phone: +91-8407884035</p>
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!</p>
+            <p>Email: <a href="mailto:ayushrajsbp2@gmail.com">ayushrajsbp2@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918407884035">+91 8407884035</a></p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/ayushrajsbp" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/ayushrsbp" target="_blank">GitHub</a>
+            </div>
+             <a href="AyushRaj_5.pdf" class="btn" download>Download Resume</a>
         </section>
-        <section id="social-media" class="section">
-            <h2>Social Media</h2>
-            <ul>
-                <li><a href="https://www.instagram.com/ayushraj.sbp/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.facebook.com/ayushrajsbp?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
-                <li><a href="https://www.linkedin.com/in/ayushrajsbp" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/ayushrsbp" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-        <section id="download" class="section">
-            <h2>Documents</h2>
-            <ul>
-                <li><a href="AyushRaj_5.pdf" download>Resume</a></li>
-                <li><a href="marksheet.docx" download>Marksheet</a></li>
-                <li><a href="project.zip" download>Projects</a></li>
-                <li><a href="" download></a></li>
-            </ul>
-        </section>
-    </div>
+    </main>
 
+    <button class="theme-switcher" id="theme-switcher" aria-label="Toggle Theme">🌙</button>
     <button class="back-to-top" onclick="scrollToTop()">↑</button>
-    
+
     <footer>
-        <p>&copy; 2024 Ayush Raj</p>
+        <p>&copy; 2025 Ayush Raj. Crafted with passion.</p>
     </footer>
-    <script>
-        function toggleMenu() {
-            var navMenu = document.getElementById('nav-menu');
-            navMenu.classList.toggle('show-nav');
-        }
 
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-
-        // Show the back-to-top button when scrolled down
-        window.onscroll = function() {
-            var backToTopButton = document.querySelector('.back-to-top');
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-            if (scrollTop > 20) {
-                backToTopButton.style.display = 'flex';
-            } else {
-                backToTopButton.style.display = 'none';
-            }
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
